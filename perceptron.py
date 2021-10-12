@@ -1,4 +1,4 @@
-# Perceptron para clasificar distintas especies de flores en el dataset Iris.
+# Perceptron para clasificar distintas especies de flores en el dataset Iris. En este ejemplo sólo se clasificarán la setosa de la virginica teniendo en cuenta la longitud sepal y la del pétalo.
 import numpy as np
 
 import pandas as pd
@@ -83,14 +83,17 @@ Z = Z.reshape(valSepal.shape)
 plt.contourf(valSepal, valPetalo, Z, alpha=0.3)
 plt.xlim(valSepal.min(), valSepal.max())
 plt.ylim(valPetalo.min(), valPetalo.max())
-plt.show()
+#plt.show()
+plt.savefig('classificationPerceptron.png')
+plt.close()
 
 
 # Visualización de los errores
 plt.plot(range(1,len(ppn.errors_)+1), ppn.errors_,marker='o')
 plt.xlabel('Epochs')
 plt.ylabel('Errors')
-plt.show()
+#plt.show()
+plt.savefig('errorsPerceptron.png')
 
 
 
