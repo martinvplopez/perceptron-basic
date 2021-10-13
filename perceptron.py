@@ -1,4 +1,4 @@
-# Perceptron para clasificar distintas especies de flores en el dataset Iris. En este ejemplo sólo se clasificarán la setosa de la virginica teniendo en cuenta la longitud sepal y la del pétalo.
+# Perceptron para clasificar distintas especies de flores en el dataset Iris. En este ejemplo sólo se clasificarán la setosa y la virginica teniendo en cuenta la longitud sepal y la del pétalo.
 import numpy as np
 
 import pandas as pd
